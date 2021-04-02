@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1C933124F423BF00712E0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C933024F423BF00712E0C /* AppDelegate.swift */; };
+		8E1C933324F423BF00712E0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C933224F423BF00712E0C /* SceneDelegate.swift */; };
+		8E1C933524F423BF00712E0C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C933424F423BF00712E0C /* LoginViewController.swift */; };
+		8E1C933824F423BF00712E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1C933624F423BF00712E0C /* Main.storyboard */; };
+		8E1C933A24F423C000712E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1C933924F423C000712E0C /* Assets.xcassets */; };
+		8E1C933D24F423C000712E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1C933B24F423C000712E0C /* LaunchScreen.storyboard */; };
+		8E1C934824F423C100712E0C /* NoonPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C934724F423C100712E0C /* NoonPayTests.swift */; };
+		8E2A1BEE24F448B400C05739 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1BEC24F448B400C05739 /* PopupViewController.swift */; };
+		8E2A1BEF24F448B400C05739 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2A1BED24F448B400C05739 /* PopupViewController.xib */; };
+		8E2A1BF224F44C0800C05739 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1BF024F44C0700C05739 /* OTPViewController.swift */; };
+		8E2A1BF324F44C0800C05739 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2A1BF124F44C0800C05739 /* OTPViewController.xib */; };
+		8E2A1C0124F4E25C00C05739 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1BFE24F4E25C00C05739 /* Extensions.swift */; };
+		8E2A1C0224F4E25C00C05739 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1BFF24F4E25C00C05739 /* Reachability.swift */; };
+		8E2A1C0324F4E25C00C05739 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1C0024F4E25C00C05739 /* AppColor.swift */; };
+		8E2A1C0F24F4E32800C05739 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2A1C0624F4E32800C05739 /* DropDownCell.xib */; };
+		8E2A1C1024F4E32800C05739 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1C0824F4E32800C05739 /* DPDKeyboardListener.swift */; };
+		8E2A1C1124F4E32800C05739 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1C0924F4E32800C05739 /* DPDConstants.swift */; };
+		8E2A1C1224F4E32800C05739 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1C0A24F4E32800C05739 /* DPDUIView+Extension.swift */; };
+		8E2A1C1324F4E32800C05739 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1C0C24F4E32800C05739 /* DropDown.swift */; };
+		8E2A1C1424F4E32800C05739 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1C0D24F4E32800C05739 /* DropDownCell.swift */; };
+		8E2A1C1524F4E32800C05739 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1C0E24F4E32800C05739 /* DropDown+Appearance.swift */; };
+		8E2A1C1724F4E57E00C05739 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1C1624F4E57E00C05739 /* SignupViewModel.swift */; };
+		8E2A1C1924F4F9A500C05739 /* OtpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A1C1824F4F9A500C05739 /* OtpTextField.swift */; };
+		8E5E43A124F5240D00CE051E /* PopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E43A024F5240D00CE051E /* PopupViewModel.swift */; };
+		8E5E43A824F5250600CE051E /* LoginVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E43A724F5250600CE051E /* LoginVCViewModel.swift */; };
+		8E5E43AA24F52B0500CE051E /* LoginApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E43A924F52B0500CE051E /* LoginApiRequest.swift */; };
+		8E5E43AC24F52B1200CE051E /* LoginRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E43AB24F52B1200CE051E /* LoginRequestProtocol.swift */; };
+		8E5E43AE24F52B8800CE051E /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E43AD24F52B8800CE051E /* LoginApi.swift */; };
+		8E5E43B024F52BE200CE051E /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E43AF24F52BE200CE051E /* RemoteDataSource.swift */; };
+		8E5E43B524F53C4A00CE051E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E43B424F53C4A00CE051E /* BaseViewController.swift */; };
+		8E5E43B724F5453300CE051E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E43B624F5453300CE051E /* Toast.swift */; };
+		8E5E43B924F5456600CE051E /* TTGSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E43B824F5456500CE051E /* TTGSnackbar.swift */; };
+		8E9A0B6C24F42E6A0066B3FC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A0B6A24F42E6A0066B3FC /* SignupViewController.swift */; };
+		8E9A0B6D24F42E6A0066B3FC /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E9A0B6B24F42E6A0066B3FC /* SignupViewController.xib */; };
+		8EFF64F724F514B400FA449F /* PopupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF64F524F514B400FA449F /* PopupTableViewCell.swift */; };
+		8EFF64F824F514B400FA449F /* PopupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF64F624F514B400FA449F /* PopupTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E1C934424F423C100712E0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E1C932524F423BF00712E0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E1C932C24F423BF00712E0C;
+			remoteInfo = NoonPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E1C932D24F423BF00712E0C /* NoonPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoonPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1C933024F423BF00712E0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E1C933224F423BF00712E0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8E1C933424F423BF00712E0C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8E1C933724F423BF00712E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E1C933924F423C000712E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E1C933C24F423C000712E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E1C933E24F423C000712E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E1C934324F423C100712E0C /* NoonPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoonPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1C934724F423C100712E0C /* NoonPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoonPayTests.swift; sourceTree = "<group>"; };
+		8E1C934924F423C100712E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E2A1BEC24F448B400C05739 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		8E2A1BED24F448B400C05739 /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
+		8E2A1BF024F44C0700C05739 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		8E2A1BF124F44C0800C05739 /* OTPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
+		8E2A1BFE24F4E25C00C05739 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8E2A1BFF24F4E25C00C05739 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8E2A1C0024F4E25C00C05739 /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		8E2A1C0624F4E32800C05739 /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
+		8E2A1C0824F4E32800C05739 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		8E2A1C0924F4E32800C05739 /* DPDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDConstants.swift; sourceTree = "<group>"; };
+		8E2A1C0A24F4E32800C05739 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		8E2A1C0C24F4E32800C05739 /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		8E2A1C0D24F4E32800C05739 /* DropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
+		8E2A1C0E24F4E32800C05739 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		8E2A1C1624F4E57E00C05739 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		8E2A1C1824F4F9A500C05739 /* OtpTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpTextField.swift; sourceTree = "<group>"; };
+		8E5E43A024F5240D00CE051E /* PopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModel.swift; sourceTree = "<group>"; };
+		8E5E43A724F5250600CE051E /* LoginVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCViewModel.swift; sourceTree = "<group>"; };
+		8E5E43A924F52B0500CE051E /* LoginApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginApiRequest.swift; sourceTree = "<group>"; };
+		8E5E43AB24F52B1200CE051E /* LoginRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequestProtocol.swift; sourceTree = "<group>"; };
+		8E5E43AD24F52B8800CE051E /* LoginApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = "<group>"; };
+		8E5E43AF24F52BE200CE051E /* RemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		8E5E43B424F53C4A00CE051E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8E5E43B624F5453300CE051E /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		8E5E43B824F5456500CE051E /* TTGSnackbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTGSnackbar.swift; sourceTree = "<group>"; };
+		8E9A0B6A24F42E6A0066B3FC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		8E9A0B6B24F42E6A0066B3FC /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		8EFF64F524F514B400FA449F /* PopupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupTableViewCell.swift; sourceTree = "<group>"; };
+		8EFF64F624F514B400FA449F /* PopupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E1C932A24F423BF00712E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E1C934024F423C100712E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E1C932424F423BF00712E0C = {
+			isa = PBXGroup;
+			children = (
+				8E1C932F24F423BF00712E0C /* NoonPay */,
+				8E1C934624F423C100712E0C /* NoonPayTests */,
+				8E1C932E24F423BF00712E0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E1C932E24F423BF00712E0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E1C932D24F423BF00712E0C /* NoonPay.app */,
+				8E1C934324F423C100712E0C /* NoonPayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E1C932F24F423BF00712E0C /* NoonPay */ = {
+			isa = PBXGroup;
+			children = (
+				8E5E43B324F53C1700CE051E /* Base */,
+				8E5E43A224F5245700CE051E /* Screens */,
+				8E2A1C0424F4E32800C05739 /* DropDown */,
+				8E2A1BFD24F4E24D00C05739 /* Helper */,
+				8E2A1BF424F4E1E500C05739 /* Networking */,
+				8E1C933024F423BF00712E0C /* AppDelegate.swift */,
+				8E1C933224F423BF00712E0C /* SceneDelegate.swift */,
+				8E1C933624F423BF00712E0C /* Main.storyboard */,
+				8E1C933924F423C000712E0C /* Assets.xcassets */,
+				8E1C933B24F423C000712E0C /* LaunchScreen.storyboard */,
+				8E1C933E24F423C000712E0C /* Info.plist */,
+			);
+			path = NoonPay;
+			sourceTree = "<group>";
+		};
+		8E1C934624F423C100712E0C /* NoonPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E1C934724F423C100712E0C /* NoonPayTests.swift */,
+				8E1C934924F423C100712E0C /* Info.plist */,
+			);
+			path = NoonPayTests;
+			sourceTree = "<group>";
+		};
+		8E2A1BF424F4E1E500C05739 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8E5E43AF24F52BE200CE051E /* RemoteDataSource.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		8E2A1BFD24F4E24D00C05739 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8E5E43B824F5456500CE051E /* TTGSnackbar.swift */,
+				8E5E43B624F5453300CE051E /* Toast.swift */,
+				8E2A1C0024F4E25C00C05739 /* AppColor.swift */,
+				8E2A1BFE24F4E25C00C05739 /* Extensions.swift */,
+				8E2A1BFF24F4E25C00C05739 /* Reachability.swift */,
+				8E2A1C1824F4F9A500C05739 /* OtpTextField.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		8E2A1C0424F4E32800C05739 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A1C0524F4E32800C05739 /* resources */,
+				8E2A1C0724F4E32800C05739 /* helpers */,
+				8E2A1C0B24F4E32800C05739 /* src */,
+			);
+			name = DropDown;
+			path = DropDown/DropDown;
+			sourceTree = "<group>";
+		};
+		8E2A1C0524F4E32800C05739 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A1C0624F4E32800C05739 /* DropDownCell.xib */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		8E2A1C0724F4E32800C05739 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A1C0824F4E32800C05739 /* DPDKeyboardListener.swift */,
+				8E2A1C0924F4E32800C05739 /* DPDConstants.swift */,
+				8E2A1C0A24F4E32800C05739 /* DPDUIView+Extension.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		8E2A1C0B24F4E32800C05739 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A1C0C24F4E32800C05739 /* DropDown.swift */,
+				8E2A1C0D24F4E32800C05739 /* DropDownCell.swift */,
+				8E2A1C0E24F4E32800C05739 /* DropDown+Appearance.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		8E5E43A224F5245700CE051E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8E5E43A624F5249400CE051E /* OTP */,
+				8E5E43A524F5248600CE051E /* Login */,
+				8E5E43A424F5247000CE051E /* Signup */,
+				8E5E43A324F5245D00CE051E /* Popup */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		8E5E43A324F5245D00CE051E /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A1BEC24F448B400C05739 /* PopupViewController.swift */,
+				8E2A1BED24F448B400C05739 /* PopupViewController.xib */,
+				8EFF64F524F514B400FA449F /* PopupTableViewCell.swift */,
+				8EFF64F624F514B400FA449F /* PopupTableViewCell.xib */,
+				8E5E43A024F5240D00CE051E /* PopupViewModel.swift */,
+			);
+			name = Popup;
+			sourceTree = "<group>";
+		};
+		8E5E43A424F5247000CE051E /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				8E5E43B224F538D600CE051E /* Request */,
+				8E9A0B6A24F42E6A0066B3FC /* SignupViewController.swift */,
+				8E9A0B6B24F42E6A0066B3FC /* SignupViewController.xib */,
+				8E2A1C1624F4E57E00C05739 /* SignupViewModel.swift */,
+			);
+			name = Signup;
+			sourceTree = "<group>";
+		};
+		8E5E43A524F5248600CE051E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8E5E43B124F5389F00CE051E /* Request */,
+				8E1C933424F423BF00712E0C /* LoginViewController.swift */,
+				8E5E43A724F5250600CE051E /* LoginVCViewModel.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		8E5E43A624F5249400CE051E /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A1BF024F44C0700C05739 /* OTPViewController.swift */,
+				8E2A1BF124F44C0800C05739 /* OTPViewController.xib */,
+			);
+			name = OTP;
+			sourceTree = "<group>";
+		};
+		8E5E43B124F5389F00CE051E /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				8E5E43AD24F52B8800CE051E /* LoginApi.swift */,
+				8E5E43AB24F52B1200CE051E /* LoginRequestProtocol.swift */,
+				8E5E43A924F52B0500CE051E /* LoginApiRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		8E5E43B224F538D600CE051E /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		8E5E43B324F53C1700CE051E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8E5E43B424F53C4A00CE051E /* BaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E1C932C24F423BF00712E0C /* NoonPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1C934C24F423C100712E0C /* Build configuration list for PBXNativeTarget "NoonPay" */;
+			buildPhases = (
+				8E1C932924F423BF00712E0C /* Sources */,
+				8E1C932A24F423BF00712E0C /* Frameworks */,
+				8E1C932B24F423BF00712E0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoonPay;
+			productName = NoonPay;
+			productReference = 8E1C932D24F423BF00712E0C /* NoonPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E1C934224F423C100712E0C /* NoonPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1C934F24F423C100712E0C /* Build configuration list for PBXNativeTarget "NoonPayTests" */;
+			buildPhases = (
+				8E1C933F24F423C100712E0C /* Sources */,
+				8E1C934024F423C100712E0C /* Frameworks */,
+				8E1C934124F423C100712E0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E1C934524F423C100712E0C /* PBXTargetDependency */,
+			);
+			name = NoonPayTests;
+			productName = NoonPayTests;
+			productReference = 8E1C934324F423C100712E0C /* NoonPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E1C932524F423BF00712E0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = pankaj;
+				TargetAttributes = {
+					8E1C932C24F423BF00712E0C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8E1C934224F423C100712E0C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8E1C932C24F423BF00712E0C;
+					};
+				};
+			};
+			buildConfigurationList = 8E1C932824F423BF00712E0C /* Build configuration list for PBXProject "NoonPay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E1C932424F423BF00712E0C;
+			productRefGroup = 8E1C932E24F423BF00712E0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E1C932C24F423BF00712E0C /* NoonPay */,
+				8E1C934224F423C100712E0C /* NoonPayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E1C932B24F423BF00712E0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2A1BF324F44C0800C05739 /* OTPViewController.xib in Resources */,
+				8E1C933D24F423C000712E0C /* LaunchScreen.storyboard in Resources */,
+				8E1C933A24F423C000712E0C /* Assets.xcassets in Resources */,
+				8E2A1C0F24F4E32800C05739 /* DropDownCell.xib in Resources */,
+				8E9A0B6D24F42E6A0066B3FC /* SignupViewController.xib in Resources */,
+				8E1C933824F423BF00712E0C /* Main.storyboard in Resources */,
+				8EFF64F824F514B400FA449F /* PopupTableViewCell.xib in Resources */,
+				8E2A1BEF24F448B400C05739 /* PopupViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E1C934124F423C100712E0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E1C932924F423BF00712E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2A1BF224F44C0800C05739 /* OTPViewController.swift in Sources */,
+				8EFF64F724F514B400FA449F /* PopupTableViewCell.swift in Sources */,
+				8E2A1C0224F4E25C00C05739 /* Reachability.swift in Sources */,
+				8E2A1C1124F4E32800C05739 /* DPDConstants.swift in Sources */,
+				8E5E43B924F5456600CE051E /* TTGSnackbar.swift in Sources */,
+				8E2A1C1424F4E32800C05739 /* DropDownCell.swift in Sources */,
+				8E2A1C1324F4E32800C05739 /* DropDown.swift in Sources */,
+				8E2A1C1724F4E57E00C05739 /* SignupViewModel.swift in Sources */,
+				8E1C933524F423BF00712E0C /* LoginViewController.swift in Sources */,
+				8E5E43AE24F52B8800CE051E /* LoginApi.swift in Sources */,
+				8E2A1C1024F4E32800C05739 /* DPDKeyboardListener.swift in Sources */,
+				8E2A1C1524F4E32800C05739 /* DropDown+Appearance.swift in Sources */,
+				8E1C933124F423BF00712E0C /* AppDelegate.swift in Sources */,
+				8E2A1C0324F4E25C00C05739 /* AppColor.swift in Sources */,
+				8E5E43B724F5453300CE051E /* Toast.swift in Sources */,
+				8E5E43AC24F52B1200CE051E /* LoginRequestProtocol.swift in Sources */,
+				8E5E43A824F5250600CE051E /* LoginVCViewModel.swift in Sources */,
+				8E2A1C1924F4F9A500C05739 /* OtpTextField.swift in Sources */,
+				8E5E43B024F52BE200CE051E /* RemoteDataSource.swift in Sources */,
+				8E9A0B6C24F42E6A0066B3FC /* SignupViewController.swift in Sources */,
+				8E5E43A124F5240D00CE051E /* PopupViewModel.swift in Sources */,
+				8E2A1BEE24F448B400C05739 /* PopupViewController.swift in Sources */,
+				8E5E43B524F53C4A00CE051E /* BaseViewController.swift in Sources */,
+				8E2A1C1224F4E32800C05739 /* DPDUIView+Extension.swift in Sources */,
+				8E5E43AA24F52B0500CE051E /* LoginApiRequest.swift in Sources */,
+				8E2A1C0124F4E25C00C05739 /* Extensions.swift in Sources */,
+				8E1C933324F423BF00712E0C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E1C933F24F423C100712E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1C934824F423C100712E0C /* NoonPayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E1C934524F423C100712E0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E1C932C24F423BF00712E0C /* NoonPay */;
+			targetProxy = 8E1C934424F423C100712E0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E1C933624F423BF00712E0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E1C933724F423BF00712E0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E1C933B24F423C000712E0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E1C933C24F423C000712E0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E1C934A24F423C100712E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E1C934B24F423C100712E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E1C934D24F423C100712E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XKK4752UG;
+				INFOPLIST_FILE = NoonPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infoedge.NoonPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8E1C934E24F423C100712E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XKK4752UG;
+				INFOPLIST_FILE = NoonPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infoedge.NoonPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8E1C935024F423C100712E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XKK4752UG;
+				INFOPLIST_FILE = NoonPayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infoedge.NoonPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoonPay.app/NoonPay";
+			};
+			name = Debug;
+		};
+		8E1C935124F423C100712E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XKK4752UG;
+				INFOPLIST_FILE = NoonPayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infoedge.NoonPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoonPay.app/NoonPay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E1C932824F423BF00712E0C /* Build configuration list for PBXProject "NoonPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1C934A24F423C100712E0C /* Debug */,
+				8E1C934B24F423C100712E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E1C934C24F423C100712E0C /* Build configuration list for PBXNativeTarget "NoonPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1C934D24F423C100712E0C /* Debug */,
+				8E1C934E24F423C100712E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E1C934F24F423C100712E0C /* Build configuration list for PBXNativeTarget "NoonPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1C935024F423C100712E0C /* Debug */,
+				8E1C935124F423C100712E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E1C932524F423BF00712E0C /* Project object */;
+}

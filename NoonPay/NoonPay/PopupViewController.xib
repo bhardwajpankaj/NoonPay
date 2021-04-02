@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupViewController" customModule="NoonPay" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="dKL-G3-d0W" id="99w-nJ-Ysv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvl-b7-w5y">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="636"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKB-MV-lBc">
+                    <rect key="frame" x="0.0" y="636" width="414" height="260"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bw-fL-F9x">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qE-lu-Rhu">
+                                    <rect key="frame" x="0.0" y="49" width="414" height="1"/>
+                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="K4K-0u-bWV"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qet-1C-Oup">
+                                    <rect key="frame" x="364" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="EIz-38-0wb"/>
+                                    </constraints>
+                                    <state key="normal" image="cross"/>
+                                    <connections>
+                                        <action selector="crossButtonClicked:" destination="-1" eventType="touchUpInside" id="tBD-je-w8g"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Qet-1C-Oup" firstAttribute="top" secondItem="1Bw-fL-F9x" secondAttribute="top" id="4DF-xE-EeH"/>
+                                <constraint firstItem="4qE-lu-Rhu" firstAttribute="leading" secondItem="1Bw-fL-F9x" secondAttribute="leading" id="9gE-pV-vFi"/>
+                                <constraint firstAttribute="bottom" secondItem="Qet-1C-Oup" secondAttribute="bottom" id="B24-Le-U50"/>
+                                <constraint firstAttribute="height" constant="50" id="G97-tI-62R"/>
+                                <constraint firstAttribute="trailing" secondItem="4qE-lu-Rhu" secondAttribute="trailing" id="XYv-EY-dVf"/>
+                                <constraint firstAttribute="trailing" secondItem="Qet-1C-Oup" secondAttribute="trailing" id="i9Z-z8-Yhg"/>
+                                <constraint firstAttribute="bottom" secondItem="4qE-lu-Rhu" secondAttribute="bottom" id="pVf-Pc-8YB"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dKL-G3-d0W">
+                            <rect key="frame" x="0.0" y="50" width="414" height="210"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="EjH-p7-JVc"/>
+                                <outlet property="delegate" destination="-1" id="q21-oU-Okv"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="1Bw-fL-F9x" firstAttribute="top" secondItem="TKB-MV-lBc" secondAttribute="top" id="8DC-Sw-QQO"/>
+                        <constraint firstItem="1Bw-fL-F9x" firstAttribute="leading" secondItem="TKB-MV-lBc" secondAttribute="leading" id="UrG-1c-oaT"/>
+                        <constraint firstAttribute="bottom" secondItem="dKL-G3-d0W" secondAttribute="bottom" id="aI0-xc-Ijh"/>
+                        <constraint firstItem="dKL-G3-d0W" firstAttribute="leading" secondItem="TKB-MV-lBc" secondAttribute="leading" id="bRl-PF-7Ey"/>
+                        <constraint firstAttribute="trailing" secondItem="1Bw-fL-F9x" secondAttribute="trailing" id="gsv-6c-8lq"/>
+                        <constraint firstAttribute="trailing" secondItem="dKL-G3-d0W" secondAttribute="trailing" id="jCj-An-XaG"/>
+                        <constraint firstItem="dKL-G3-d0W" firstAttribute="top" secondItem="1Bw-fL-F9x" secondAttribute="bottom" id="pmU-kX-7CN"/>
+                        <constraint firstAttribute="height" constant="260" id="tK4-qW-oyQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TKB-MV-lBc" secondAttribute="bottom" id="Org-KK-sDz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TKB-MV-lBc" secondAttribute="trailing" id="Xek-ZV-NI4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pvl-b7-w5y" secondAttribute="trailing" id="fCR-u6-53Q"/>
+                <constraint firstItem="Pvl-b7-w5y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="i3g-hr-ha0"/>
+                <constraint firstItem="TKB-MV-lBc" firstAttribute="top" secondItem="Pvl-b7-w5y" secondAttribute="bottom" id="qJq-I8-htN"/>
+                <constraint firstItem="Pvl-b7-w5y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vk4-Ip-xeG"/>
+                <constraint firstItem="TKB-MV-lBc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wlU-Tk-evu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="103"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cross" width="14" height="14"/>
+    </resources>
+</document>
